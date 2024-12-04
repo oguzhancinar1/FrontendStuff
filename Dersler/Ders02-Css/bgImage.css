@@ -1,0 +1,5 @@
+.bgImage{
+    background-image: url("https://picsum.photos/200/300?grayscale");
+    width: 500px;
+    height: 300px;
+}
