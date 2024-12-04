@@ -1,0 +1,68 @@
+/* Psuedo Class */
+
+/* .link{
+    color: red;
+}
+
+.link:active{
+    color: blue;
+}
+
+.link:visited{
+    color: black;
+}
+
+.link:hover{
+    color: yellow;
+}
+
+.list_item{
+    color: aqua;
+    font-size: 25px;
+    list-style-type: none;
+} */
+
+
+/*  //listenin ilk elemanına erişim
+.list_item:first-child{
+    color: blueviolet;
+} */
+
+/*  //listenin son elemanına erişim
+.list_item:last-child{
+    color: red;
+    font-size: 40px;
+} */
+
+/*  //listenin belirli elemanlarına erişim
+.list_item:nth-child(odd){
+    color: black;
+} */
+
+/* Psuedo Element */
+
+/* //listedeki ilk harflere erişim
+.list_item::first-letter{
+    color: green;
+    font-size: 40px;
+} */
+
+.text::first-line{
+    color: red;
+}
+
+/* Başa herhangi birşey ekleme */
+.text::before{
+    content: "Başa eklenen kisim";
+    font-size: 30px;
+    color: blue;
+}
+
+/* Sona herhangi birşey ekleme */
+.text::after{
+    content: "Sona eklenen kisim";
+    color: blue;
+    font-size: 30px;
+}
+
+
