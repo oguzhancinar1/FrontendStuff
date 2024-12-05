@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 14px;
+}
+/* Notes to myself
+
+    --Flex Container Properties --
+
+-->flex-direction: Specifies the direction of the flex items 
+(row, row-reverse, column, column-reverse).
+
+-->justify-content:Aligns items horizontally 
+(flex-start, center, flex-end, space-between, space-around, space-evenly).
+
+-->align-items:Aligns items vertically 
+(stretch, flex-start, center, flex-end, baseline).
+
+-->flex-wrap:Specifies whether items should wrap onto the next line 
+(nowrap, wrap, wrap-reverse).
+
+-->gap:Sets the spacing between flex items.
+
+    --Flex Item Properties--
+
+-->order:Controls the order of the flex items 
+(default is 0; smaller numbers appear first).
+
+-->flex-grow:Specifies how much a flex item should grow relative to others 
+(0 means no growth).
+
+-->flex-shrink:Specifies how much a flex item should shrink relative to others 
+(1 by default).
+
+-->flex-basis:Defines the default size of a flex item before it grows or shrinks 
+(auto, px, %, etc.).
+
+-->align-self:Overrides align-items for an individual flex item 
+(auto, stretch, flex-start, etc.).
+*/
+.container{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    
+    
+}
+.box{
+    width: 200;
+    height: 200;
+    background-color: red;
+}
+.box1{
+    order: 3
+}
+.box2{
+    order: 2
+}
+.box3{
+    order: 1
+}
+@media screen and (max-width: 800px) {
+    .box1{
+        order: 1
+    }
+    .box2{
+        order: 3
+    }
+    .box3{
+        order: 2
+    }  
+}
